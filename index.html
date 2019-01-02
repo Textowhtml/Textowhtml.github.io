@@ -1,13 +1,100 @@
-!<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
-		<link src="./css/style.css"></link>
-	</head>
-	<body>
-		<h1>Github 上传测试</h1>
-		<script src="./js/index.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			padding: 0px;
+			margin: 0px;
+		}
+		.main{
+			background: url(img/images/fish/5bj.jpg) no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.x{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+/* 			background: re; */
+			border: 0px red solid;
+			animation:x_left_to_right  10s linear infinite;
+		}
+		.y{
+			position: absolute;
+			border: 0px blue solid;
+			animation:y_top_bottom 10s linear infinite;
+		}
+		.f1{
+			width:55px;
+			height:37px ;
+			border: 0px red solid;
+			background: url(img/images/fish/fish1.png);
+			animation: f1_run 1s steps(4)  infinite;
+		}
+		.f11{
+			width: 509px;
+			height: 270px;
+			background: url(img/images/fish/shark.png);
+			animation: f11_run 1s steps(8) infinite;
+		}
+		@keyframes f1_run{
+			0%{
+				background-position-y: 0px;
+			}
+			100%{
+				background-position-y: -148px;
+			}
+		}
+		@keyframes x_left_to_right{
+			0%{
+				left: 0%;
+			}
+			100%{
+				left: 100%;
+			}
+		}
+		@keyframes y_top_bottom{
+			0%{
+				top: 0px;
+			}
+			20%{
+				transform: rotateZ(20deg);
+				transform-origin: bottom right: ;
+			}
+			70%{
+				transform: rotateZ(-20deg);
+				transform-origin: top right: ;
+			}
+			50%{
+				top:50%;
+			}
+			100%{
+				top:0px;
+			}
+		}
+		@keyframes f11_run{
+			0%{
+				background-position-y: 0px;
+			}
+			100%{
+				background-position-y: -2160px;
+			}
+		}
+	</style>
+</head>
+<body class="main">
+	<div class="x">
+		<div class="y">
+			<div class="f1"></div>
+			<div class="f1"></div>
+			<div class="f1"></div>
+			<div class="f1"></div>
+			<div class="f1"></div>
+			<div class="f11"></div>
+		</div>
+	</div>
+	
+</body>
 </html>
