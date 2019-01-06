@@ -135,7 +135,7 @@ function move(){
 			break;
 		}
 		this.score += 1;
-		score.innerHTML = this.score;
+		scoreBox.innerHTML = this.score;
 		removeClass('food');
 		food();
 	}
@@ -169,8 +169,7 @@ function relogGame(){
 	this.score = 0;
 	lose.style.display = 'block';
 	loserScore.innerHTML = this.score;
-	this.score = 0;
-	score.innerHTML = this.score;
+	scoreBox.innerHTML = this.score;
 	startGameBool = true;
 	startPaushBool = true;
 	startP.setAttribute('src','./img/播放.png');
