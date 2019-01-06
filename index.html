@@ -2,51 +2,37 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
-		<style type="text/css">
-			.ct{
-				width: 300px;
-				height: 300px;
-				background: green;
-				animation: run 3s linear infinite;
-				position: absolute;
-			}
-			@keyframes run{
-				0%{
-					background: red;
-					left: 0%;
-					transform: scale(1);
-				}
-				30%{
-					background: lavenderblush;
-					left: 30%;
-					transform: scale(1.2);
-					transform: rotate(90deg);
-					border-radius: 50px;
-					transform: translate(20px,20px);
-				}
-				50%{
-					background: yellow;
-					left: 50%;
-					transform: scale(1.5);
-					transform: rotate(180deg);
-					border-radius: 100px;
-					transform: translate(50px,50px);
-				}
-				100%{
-					background: blue;
-					left: 80%;
-					transform: scale(2);
-					transform: rotate(360deg);
-					border-radius: 300px;
-					transform: translate(100px,100px);
-				}
-			}
-		</style>
+		<title>终极简陋版贪吃蛇</title>
+		<link rel="stylesheet" href="css/new_file.css">
 	</head>
 	<body>
-		<div class="ct">
+		<div class="star" id = "startPage"> 
+			<div class="starBtn" id="startbtn"></div>
+		</div>
+		
+		<div class="Wrapper">
+			<div class="left-side">
+				<img src="img/播放.png" id="startP" >
+			</div>
+			<div class="main">
+				<div class="herader">
+					<div class="score">
+						分数：
+						<span id="socre"></span>
+					</div>
+				</div>
+				<div class="content" id="content"></div>
+			</div>
 			
 		</div>
+		<div class="loser" id="lose">
+			<div class="con">
+				<div class="close" id="close"></div>
+				<span class="loserscore" id="loserScore"></span>
+			</div> 
+		</div>
+		<script src="js/new_file.js">
+			
+		</script>
 	</body>
 </html>
