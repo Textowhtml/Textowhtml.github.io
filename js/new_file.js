@@ -166,9 +166,10 @@ function relogGame(){
 	this.down = true;
 	
 	
-	this.score = 0;
+	
 	lose.style.display = 'block';
 	loserScore.innerHTML = this.score;
+	this.score = 0;
 	scoreBox.innerHTML = this.score;
 	startGameBool = true;
 	startPaushBool = true;
