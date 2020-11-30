@@ -18,7 +18,7 @@ var videos = document.getElementById("videos");
 var snakeMove;
 var	startGameBool = true;
 var	startPaushBool = true;
-var speed = 100;
+var speed = 500;
 var count = 11;
 init();  
 function init(){
